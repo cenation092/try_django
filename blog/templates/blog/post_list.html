@@ -1,7 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
 	<title> Mohit Rai</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 	<div>
@@ -13,8 +19,10 @@
 			</div>
 		{% endfor %}
 	</div>
-	<div>
-		<h1> About Me </h1>
+	<div class="text">
+		<div class="about">
+				<h1> About Me </h1>
+		</div>
 
 		Welcome! My Name is Mohit Rai. I was studying B.Tech CS Vth semester at University Institute of Engineering & Technology, CSJM University, Kanpur when I start this blog. I started this website to share my knowledge with everyone and anyone who needs it.
 
@@ -36,20 +44,24 @@
 
 	</div>
 
-	<div>
+	<div class="img">
+		<div class = "photos">
+			<h1>Photos of Mine</h1>
+		</div>
 
-		<h1>Photos of Mine</h1>
+		<div class="pic">
 
-		<img src="https://1.bp.blogspot.com/-soXwPGTiiqc/XOUdPp2UzTI/AAAAAAAASXU/p43dywaw2MYu39yYHK79CaJff6vcRt8FwCLcBGAs/s640/IMG_20190517_173231_HDR.jpg"><br>
+			<img src="https://1.bp.blogspot.com/-soXwPGTiiqc/XOUdPp2UzTI/AAAAAAAASXU/p43dywaw2MYu39yYHK79CaJff6vcRt8FwCLcBGAs/s640/IMG_20190517_173231_HDR.jpg"><br>
 
-		<img src="https://2.bp.blogspot.com/-u6Efj4zHh-g/XB_Ihd4BxJI/AAAAAAAAPes/_L_ce5JQ2NITteKLLc_ZFHDd8hR14IesACLcBGAs/s640/IMG_5299.JPG"><br>
+			<img src="https://2.bp.blogspot.com/-u6Efj4zHh-g/XB_Ihd4BxJI/AAAAAAAAPes/_L_ce5JQ2NITteKLLc_ZFHDd8hR14IesACLcBGAs/s640/IMG_5299.JPG"><br>
 
-		<img src="https://2.bp.blogspot.com/-RJ6FLw2Az78/XOUdHlAMewI/AAAAAAAASXQ/wHy1_T35vgkE__RvCmzKX-CZODNxk_YhgCLcBGAs/s640/IMG_20190517_172846_HDR.jpg"><br>
-
+			<img src="https://2.bp.blogspot.com/-RJ6FLw2Az78/XOUdHlAMewI/AAAAAAAASXQ/wHy1_T35vgkE__RvCmzKX-CZODNxk_YhgCLcBGAs/s640/IMG_20190517_172846_HDR.jpg"><br>
+		
+		</div>
 
 	</div>
 
-	<div>
+	<div class = "contacts">
 		Feel free to ping me for any help🙃<br>
 
 		Email: <a href="cenation092@gmail.com">cenation092@gmail.com</a><br>
